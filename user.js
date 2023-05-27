@@ -13,7 +13,7 @@ async function renderPosts(id) {
   const postsData = await posts.json();
   postListEl.innerHTML = postsData
     .map(
-      (post) => 
+      (post) =>
     postHTML(post))
     .join('');
 }
